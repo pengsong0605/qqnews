@@ -1,5 +1,5 @@
-数据库名：news
-数据表名：article
+鏁版嵁搴撳悕锛歯ews
+鏁版嵁琛ㄥ悕锛歛rticle
 
 CREATE TABLE `article` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
