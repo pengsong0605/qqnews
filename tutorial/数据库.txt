@@ -1,0 +1,16 @@
+数据库名：news
+数据表名：article
+
+CREATE TABLE `article` (
+  `id` int(20) NOT NULL AUTO_INCREMENT,
+  `news_id` varchar(20) NOT NULL,
+  `url` varchar(500) NOT NULL,
+  `title` varchar(1000) DEFAULT NULL,
+  `text_content` longtext,
+  `key_words` varchar(1000) DEFAULT NULL,
+  `has_image` varchar(3) NOT NULL,
+  `has_classified` varchar(1) DEFAULT NULL,
+  `should_left` varchar(1) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx_url` (`url`(255))
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
